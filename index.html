@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Love Button</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hearts" id="hearts-container"></div>
+  <div class="container">
+    <h1>Hello Adinda</h1>
+    <p>Jangan lupa bernafas 💗</p>
+    <button onclick="addHeart()">❤️</button>
+  </div>
+  <script>
+    function addHeart() {
+      const container = document.getElementById("hearts-container");
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "%";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      container.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }
+  </script>
+</body>
+</html>
