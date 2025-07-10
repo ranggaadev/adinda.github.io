@@ -16,12 +16,12 @@ body {
 }
 
 .container h1 {
-    font-size: 3em;
+    font-size: 8vw;
     margin-bottom: 0.3em;
 }
 
 .container p {
-    font-size: 1.8em;
+    font-size: 5vw;
 }
 
 .hearts {
